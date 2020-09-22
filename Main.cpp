@@ -1,5 +1,9 @@
 #include <iostream>
-#include "Excercises.cpp"
+#include "Excercises5-6.cpp"
+#include "Exercise_7_1.cpp"
+#include "Exercise_7_2.cpp"
+#include "Exercise_7_5.cpp"
+#include "Exercise_8.cpp"
 
 int main()
 {
@@ -43,13 +47,41 @@ int main()
 		case 4:
 			exercise_6_4();
 			break;
-		case 5:
-			exercise_6_5();
-			break;
 		default:
 			cout << "Wrong input, try again" << endl;
 			goto SelectExercise;
 			}
+		break;
+	case 7:
+		switch (ExerciseItem)
+		{
+		case 1:
+			exercise_7_1();
+			break;
+		case 2:
+			exercise_7_2();
+			break;
+		case 5:
+			exercise_7_5();
+			break;
+		default:
+			cout << "Wrong input, try again" << endl;
+			goto SelectExercise;
+		}
+		break;
+	case 8:
+		switch (ExerciseItem)
+		{
+		case 1:
+			exercise_8_1();
+			break;
+		case 2:
+			exercise_8_2();
+			break;
+		default:
+			cout << "Wrong input, try again" << endl;
+			goto SelectExercise;
+		}
 		break;
 	default:
 		cout << "Wrong input, try again" << endl;
